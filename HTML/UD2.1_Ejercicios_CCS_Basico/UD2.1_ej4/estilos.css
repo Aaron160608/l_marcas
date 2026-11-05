@@ -1,0 +1,19 @@
+#corp {
+    color: navy;
+    font-size: 32px;
+}
+
+.corp {
+    color: navy;
+    font-size: 24px;
+}
+
+a[target] {
+    color: green;
+    font-weight: bold;
+}
+
+p[class] {
+    background-color: #eaf2f8;
+    padding: 5px;
+}

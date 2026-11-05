@@ -1,0 +1,18 @@
+/*
+#DIFERENCIA ENTRE INSIDE Y OUTSIDE:
+Con 'outside', la viñeta queda fuera de la caja del texto, por lo que las lineas de un texto largo quedan alineadas verticalmente entre si. Con 'inside', la viñeta se mete dentro de la primera linea de texto, haciendo que las siguientes lineas vuelvan a empezar justo debajo de la viñeta.
+*/
+.lista-tareas {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.lista-tareas li {
+    background-image: url('img/icono.png');
+    background-repeat: no-repeat;
+    background-position: left 4px;
+    background-size: 16px 16px;
+    padding-left: 26px;
+    margin-bottom: 10px;
+}

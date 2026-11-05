@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.pagina {
+    width: 800px;
+    margin: 0 auto;
+    border: 2px solid #333333;
+    padding: 20px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.cabecera {
+    background-color: #d1ecf1;
+    border: 1px solid #bee5eb;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.contenido {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 15px;
+}
+
+.tarjeta {
+    width: 220px;
+    padding: 15px;
+    border: 1px solid #cccccc;
+    margin: 5px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.etiqueta {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    margin: 10px 0;
+    background-color: #ffc107;
+    color: #000000;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.pie {
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}

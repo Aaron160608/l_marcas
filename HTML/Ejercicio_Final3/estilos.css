@@ -1,0 +1,175 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #121218;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: #0a0a0f;
+    padding-top: 20px;
+    box-sizing: border-box;
+    border-right: 2px solid #ff4f81;
+}
+
+.logo {
+    color: #ff4f81;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 0 20px;
+    margin-bottom: 40px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    padding: 15px 20px;
+    color: #cccccc;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #38e1d0;
+}
+
+main {
+    margin-left: 200px;
+}
+
+header {
+    position: relative;
+    height: 300px;
+    background-color: #261b40;
+}
+
+.portada {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+.portada h1 {
+    color: #38e1d0;
+    font-size: 42px;
+    margin: 0;
+}
+
+.portada p {
+    color: #dddddd;
+    margin: 10px 0 0 0;
+    font-size: 16px;
+}
+
+section {
+    padding: 30px 40px 50px 40px;
+}
+
+h2 {
+    position: sticky;
+    top: 0;
+    background-color: #121218;
+    color: #38e1d0;
+    margin: 0;
+    padding: 20px 0 15px 0;
+    border-bottom: 2px solid #38e1d0;
+    z-index: 10;
+}
+
+.horario {
+    position: relative;
+    list-style: none;
+    padding: 20px 0 0 0;
+    margin: 0;
+}
+
+.horario::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    bottom: 0;
+    left: 4px;
+    width: 2px;
+    background-color: #ff4f81;
+}
+
+.horario li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+.horario li::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #38e1d0;
+    border-radius: 50%;
+}
+
+.horario strong {
+    color: #ff4f81;
+    margin-right: 15px;
+}
+
+.cartel {
+    padding-top: 25px;
+}
+
+.cartel span {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px 15px 0;
+    border: 2px solid #ff4f81;
+    border-radius: 25px;
+    color: #dddddd;
+}
+
+.cartel span:first-child {
+    background-color: #ff4f81;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.faq {
+    height: 170px;
+    overflow-y: auto;
+    border: 2px solid #38e1d0;
+    padding: 20px;
+    margin-top: 25px;
+    box-sizing: border-box;
+}
+
+.faq p {
+    margin: 0 0 15px 0;
+    font-size: 15px;
+}
+
+.faq strong {
+    color: #ffffff;
+}
+
+footer {
+    padding: 30px 40px;
+    border-top: 1px solid #222222;
+    color: #888888;
+    font-size: 14px;
+}

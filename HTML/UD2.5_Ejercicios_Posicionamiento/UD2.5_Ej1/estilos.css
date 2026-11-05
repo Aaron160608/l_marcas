@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.contenedor {
+    width: 300px;
+    border: 2px solid #333333;
+    padding: 10px;
+    background-color: #f8f9fa;
+    position: relative;
+}
+
+.cuadro {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.c1 {
+    background-color: #007bff;
+    position: relative;
+    z-index: 2;
+}
+
+.c2 {
+    background-color: #28a745;
+    position: relative;
+    top: -40px;
+    left: 50px;
+    z-index: 1;
+}
+
+.c3 {
+    background-color: #dc3545;
+    position: absolute;
+    top: 0;
+    right: 0;
+}

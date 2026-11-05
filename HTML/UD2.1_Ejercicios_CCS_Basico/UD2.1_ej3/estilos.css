@@ -1,0 +1,21 @@
+h1 em {
+    color: orange;
+}
+
+li p {
+    background-color: #ffffff;
+}
+
+.comentarios p {
+    border-left: 4px solid #3498db;
+    padding-left: 8px;
+}
+
+p.especial {
+    font-weight: bold;
+    color: darkred;
+}
+
+.especial {
+    text-decoration: underline;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 4 · Tabla de inventario</title>
+  <style>
+    table {
+      border-spacing: 8px;          /* separación entre celdas (no se usa border-collapse) */
+      empty-cells: hide;            /* prueba también con "show" para ver la diferencia */
+    }
+    caption {
+      caption-side: bottom;         /* título debajo de la tabla */
+      font-style: italic;
+    }
+    th, td {
+      border: 2px solid #495057;
+      padding: 6px 10px;
+    }
+    thead th {
+      background-color: #343a40;
+      color: white;
+    }
+    tfoot td, tfoot th {
+      background-color: #ffe8cc;
+    }
+    td.categoria {
+      vertical-align: middle;       /* centra verticalmente las celdas con rowspan */
+      background-color: #e7f5ff;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <!--
+    EXPLICACIÓN DE empty-cells:
+    Con empty-cells: show, las celdas vacías se dibujan igual que las demás:
+    se ven su borde y su fondo, como una casilla en blanco.
+    Con empty-cells: hide, las celdas vacías se ocultan: no se pinta su borde
+    ni su fondo, y en su lugar queda un hueco en la tabla.
+    Solo funciona cuando se usa border-spacing (border-collapse: separate),
+    que es el caso de esta tabla. En esta tabla hay celdas vacías a propósito
+    (el precio unitario del cable HDMI y una celda del pie), así que con hide
+    se ve un hueco sin borde y con show una casilla vacía con borde.
+  -->
+  <table>
+    <caption>Inventario de material informático</caption>
+
+    <thead>
+      <tr>
+        <th>Categoría</th>
+        <th>Producto</th>
+        <th>Cantidad</th>
+        <th>Precio unidad</th>
+        <th>Subtotal</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td class="categoria" rowspan="3">Periféricos</td>
+        <td>Ratón</td>
+        <td>10</td>
+        <td>12,00 €</td>
+        <td>120,00 €</td>
+      </tr>
+      <tr>
+        <td>Teclado</td>
+        <td>8</td>
+        <td>25,00 €</td>
+        <td>200,00 €</td>
+      </tr>
+      <tr>
+        <td>Auriculares</td>
+        <td>5</td>
+        <td>30,00 €</td>
+        <td>150,00 €</td>
+      </tr>
+      <tr>
+        <td class="categoria" rowspan="2">Monitores y cables</td>
+        <td>Monitor 24"</td>
+        <td>3</td>
+        <td>150,00 €</td>
+        <td>450,00 €</td>
+      </tr>
+      <tr>
+        <td>Cable HDMI</td>
+        <td>20</td>
+        <td></td>
+        <td>60,00 €</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <th colspan="2">Total</th>
+        <td>46</td>
+        <td></td>
+        <td>980,00 €</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>

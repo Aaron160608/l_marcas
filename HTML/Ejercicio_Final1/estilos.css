@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,700");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    margin-bottom: 5px;
+}
+
+header img {
+    height: 80px;
+}
+
+.titulos {
+    text-align: center;
+}
+
+.titulos h1 {
+    margin: 0;
+    color: #600000;
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.titulos h2 {
+    margin: 5px 0 0 0;
+    color: #004000;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+nav {
+    background-color: #eee;
+    margin-bottom: 15px;
+    padding: 5px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px 8px;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+nav a:hover {
+    color: #cc0000;
+    border-top: 2px solid #cc0000;
+    border-bottom: 2px solid #cc0000;
+}
+
+.redes-sociales {
+    width: 100%;
+    font-size: 0;
+}
+
+.redes-sociales article {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(33.333% - 10px);
+    height: 220px;
+    margin: 5px;
+    padding: 20px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.redes-sociales article img {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-right: 15px;
+    transition: transform 0.3s ease;
+}
+
+.redes-sociales article img:hover {
+    transform: scale(1.2);
+}
+
+.redes-sociales article .info {
+    overflow: hidden;
+}
+
+.redes-sociales article h3 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    color: #222222;
+}
+
+.redes-sociales article p {
+    margin: 0;
+    line-height: 1.3;
+    color: #333333;
+}
+
+.redes-sociales article:nth-child(1) {
+    background-color: rgba(162, 179, 188, 0.5);
+}
+
+.redes-sociales article:nth-child(2) {
+    background-color: rgba(241, 151, 79, 0.5);
+}
+
+.redes-sociales article:nth-child(3) {
+    background-color: rgba(208, 61, 107, 0.5);
+}
+
+.redes-sociales article:nth-child(4) {
+    background-color: rgba(195, 23, 65, 0.5);
+}
+
+.redes-sociales article:nth-child(5) {
+    background-color: rgba(109, 104, 166, 0.5);
+}
+
+.redes-sociales article:nth-child(6) {
+    background-color: rgba(156, 154, 203, 0.5);
+}
+
+footer {
+    background-color: #eee;
+    text-align: center;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.iconos-footer img {
+    width: 45px;
+    height: 45px;
+    margin: 0 3px;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+}
+
+.iconos-footer img:hover {
+    transform: scale(1.2);
+}
+
+.copyright {
+    margin: 10px 0 0 0;
+    font-size: 13px;
+    color: #555555;
+}

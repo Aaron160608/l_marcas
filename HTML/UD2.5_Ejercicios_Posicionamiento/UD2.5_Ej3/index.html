@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 3 - Tarjeta de producto y Scroll</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- PARTE A: Tarjeta de servicio con etiqueta sobresaliente -->
+    <h2>Tarjeta de Servicio ASIR</h2>
+    <div class="tarjeta">
+        <span class="etiqueta">-20%</span>
+        <div class="cuadro-imagen">Servidor VPS Cloud</div>
+        <h3>Plan Servidor Dedicado</h3>
+        <p class="precio">19,99 &euro; / mes</p>
+    </div>
+
+    <!-- PARTE B: Caja de comentarios con scroll -->
+    <h2>Comentarios del Servidor</h2>
+    <div class="caja-comentarios">
+        <p><strong>Usuario1:</strong> El tiempo de respuesta del servidor HTTP es excelente desde la ultima actualizacion.</p>
+        <p><strong>Usuario2:</strong> Hemos notado una ligera caida de red a las 03:00 AM durante el mantenimiento.</p>
+        <p><strong>Usuario3:</strong> La configuracion del cortafuegos IPTables ha bloqueado correctamente los intentos no autorizados.</p>
+        <p><strong>Usuario4:</strong> Excelente velocidad en la resolucion de nombres con el nuevo DNS secundario.</p>
+        <p><strong>Usuario5:</strong> Solicitamos ampliar la cuota de disco en la particion /var/log para los informes semanales.</p>
+        <p><strong>Usuario6:</strong> Las copias de seguridad incrementales en el servidor remoto se completaron a tiempo.</p>
+    </div>
+
+    <!-- DEMOSTRACION: Duplicado de tarjeta para probar visibility vs display -->
+    <h2>Prueba: Visibility vs Display</h2>
+
+    <h3>Tarjeta con visibility: hidden</h3>
+    <div class="tarjeta tarjeta-oculta-visibility">
+        <span class="etiqueta">-20%</span>
+        <div class="cuadro-imagen">Servidor VPS Cloud</div>
+        <h3>Plan Servidor Dedicado</h3>
+        <p class="precio">19,99 &euro; / mes</p>
+    </div>
+
+    <h3>Tarjeta con display: none</h3>
+    <div class="tarjeta tarjeta-oculta-display">
+        <span class="etiqueta">-20%</span>
+        <div class="cuadro-imagen">Servidor VPS Cloud</div>
+        <h3>Plan Servidor Dedicado</h3>
+        <p class="precio">19,99 &euro; / mes</p>
+    </div>
+
+    <h3>Tarjeta Normal (A continuacion)</h3>
+    <div class="tarjeta">
+        <span class="etiqueta">-20%</span>
+        <div class="cuadro-imagen">Servidor VPS Cloud</div>
+        <h3>Plan Servidor Dedicado</h3>
+        <p class="precio">19,99 &euro; / mes</p>
+    </div>
+
+</body>
+</html>

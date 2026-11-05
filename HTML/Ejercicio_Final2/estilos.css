@@ -1,0 +1,262 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9efe9;
+    color: #222222;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor-principal {
+    width: 960px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #2f5d46;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+    position: relative;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+    font-size: 32px;
+}
+
+header p {
+    margin: 0;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.sello-temporada {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 84px;
+    height: 84px;
+    background-color: #f08a24;
+    color: #ffffff;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 13px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 22px;
+    line-height: 1.2;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #2f5d46;
+    z-index: 100;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    padding: 15px 25px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f08a24;
+}
+
+section {
+    padding: 30px 40px;
+}
+
+h2 {
+    color: #2f5d46;
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.contenedor-tarjetas {
+    white-space: nowrap;
+}
+
+.tarjeta-ruta {
+    display: inline-block;
+    width: 270px;
+    vertical-align: top;
+    white-space: normal;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-right: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    position: relative;
+}
+
+.tarjeta-ruta:last-child {
+    margin-right: 0;
+}
+
+.tarjeta-elevada {
+    position: relative;
+    top: -12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.foto-tarjeta {
+    height: 140px;
+    width: 100%;
+}
+
+.foto-verde {
+    background-color: #8fb996;
+}
+
+.foto-azul {
+    background-color: #a7c5d9;
+}
+
+.foto-amarilla {
+    background-color: #e5c07b;
+}
+
+.etiqueta-nivel {
+    position: absolute;
+    top: 10px;
+    right: -8px;
+    background-color: #f08a24;
+    color: #ffffff;
+    padding: 4px 12px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.tarjeta-ruta h3 {
+    margin: 15px 15px 8px 15px;
+    font-size: 18px;
+    color: #222222;
+}
+
+.tarjeta-ruta p {
+    margin: 0 15px 15px 15px;
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.4;
+}
+
+.contenedor-galeria {
+    position: relative;
+    height: 250px;
+}
+
+.polaroid {
+    width: 280px;
+    height: 210px;
+    border: 6px solid #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    transition: z-index 0.2s;
+}
+
+.polaroid-izq {
+    top: 10px;
+    left: 20px;
+    z-index: 1;
+}
+
+.polaroid-centro {
+    top: 30px;
+    left: 280px;
+    z-index: 2;
+}
+
+.polaroid-der {
+    top: 10px;
+    left: 530px;
+    z-index: 1;
+}
+
+.polaroid:hover {
+    z-index: 10;
+}
+
+.pie-polaroid {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    padding: 8px 12px;
+    font-size: 13px;
+}
+
+.caja-opiniones {
+    height: 170px;
+    overflow-y: auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 10px 20px;
+}
+
+.caja-opiniones article {
+    border-bottom: 1px solid #eeeeee;
+    padding: 10px 0;
+}
+
+.caja-opiniones article:last-child {
+    border-bottom: none;
+}
+
+.caja-opiniones p {
+    margin: 0;
+    font-size: 14px;
+}
+
+footer {
+    background-color: #2f5d46;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    font-size: 13px;
+}
+
+.boton-subir {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f08a24;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+    z-index: 1000;
+}
+
+.boton-subir:hover {
+    background-color: #d9771c;
+}

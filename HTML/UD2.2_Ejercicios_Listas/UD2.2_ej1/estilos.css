@@ -1,0 +1,11 @@
+ul.ingredientes {
+    list-style-type: square;
+}
+
+ol.pasos {
+    list-style-type: upper-roman;
+}
+
+ul.utensilios {
+    list-style-type: circle;
+}

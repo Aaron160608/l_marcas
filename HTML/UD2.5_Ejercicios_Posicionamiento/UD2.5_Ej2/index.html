@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Monitorizacion de Servidores ASIR</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header id="inicio" class="banner">
+        <h1>Panel de Monitorizacion de Red</h1>
+        <p>Infraestructura de Servidores ASIR</p>
+    </header>
+
+    <nav class="menu-navegacion">
+        <ul>
+            <li><a href="#s1">Servidor Web</a></li>
+            <li><a href="#s2">Servidor DNS</a></li>
+            <li><a href="#s3">Base de Datos</a></li>
+            <li><a href="#s4">Firewall</a></li>
+        </ul>
+    </nav>
+
+    <main class="contenido-principal">
+        <section id="s1" class="seccion">
+            <h2>Servidor Web (Apache/Nginx)</h2>
+            <p>Estado del servicio: Activo. El servidor web atiende peticiones HTTP/HTTPS correctamente sobre los puertos 80 y 443.</p>
+            <p>Se realiza rotacion diaria de logs en /var/log/nginx/access.log para mantener el almacenamiento controlado.</p>
+            <p>Configuracion de certificados SSL/TLS con Let's Encrypt funcionando sin incidencias.</p>
+        </section>
+
+        <section id="s2" class="seccion">
+            <h2>Servidor DNS (BIND9)</h2>
+            <p>Estado del servicio: Activo. Resolucion de nombres autoritativa para el dominio local funcionando.</p>
+            <p>Las zonas directas e inversas se sincronizan correctamente entre el servidor primario y el secundario.</p>
+            <p>Tiempos de respuesta de peticiones DNS por debajo de los 5ms.</p>
+        </section>
+
+        <section id="s3" class="seccion">
+            <h2>Base de Datos (MariaDB/PostgreSQL)</h2>
+            <p>Estado del servicio: Activo. Rendimiento optimizado mediante pool de conexiones.</p>
+            <p>Copias de seguridad automatizadas ejecutandose mediante tareas programadas de cron cada medianoche.</p>
+            <p>Uso de memoria RAM por parte del servicio mantenido en un 40% del limite configurado.</p>
+        </section>
+
+        <section id="s4" class="seccion">
+            <h2>Firewall e IPTables</h2>
+            <p>Estado del servicio: Activo. Reglas de filtrado de paquetes aplicadas correctamente.</p>
+            <p>Politica por defecto: DROP en INPUT y FORWARD. Trafico saliente permitido mediante politicas en OUTPUT.</p>
+            <p>Deteccion y bloqueo de ataques de fuerza bruta por SSH activado mediante Fail2Ban.</p>
+        </section>
+    </main>
+
+    <a href="#inicio" class="boton-subir">&uarr; Subir</a>
+
+</body>
+</html>
